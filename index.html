@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  
+  <title>Contact form</title>
+</head>
+<body>
+  <div id="success-message">
+    <span><img src="./assets/images/icon-success-check.svg" alt=""> <p>Message Sent!</p>
+    </span>
+    <h6>Thanks for completing the form. We'll be in touch soon!</h6>
+  </div>
+  <main>
+    <h1>Contact Us</h1>
+    <div class="form">
+      <div class="name">
+        <div class="containers" id="firstname">
+          <label for="first">First Name <span>*</span></label><br>
+          <input type="text" class="first">
+          <div class="error-message">This field is required.</div>         
+        </div>
+        <div class="containers" id="lastname">
+          <label for="last">Last Name <span>*</span></label><br>
+          <input type="text" class="last">
+          <div class="error-message">This field is required.</div> 
+        </div>
+      </div>
+      <div class="containers" id="email-container">
+        <label for="email">Email Address <span>*</span></label><br>
+        <input type="email" class="email">
+        <div class="error-message">Please enter a valid email address.</div>       
+      </div>
+      <div class="containers" id="query-container">
+        <label for="checkbox">Query Type <span>*</span></label>
+        <div class="query">
+          <div class="checkbox-container">
+            <div class="checkbox"><div class="inside"></div></div>
+            <p>General Enquiry</p><br>
+          </div>
+          <div class="checkbox-container">
+            <div class="checkbox"><div class="inside"></div></div>
+            <p>Support Request</p>            
+          </div>          
+        </div>  
+      </div>
+      <div class="containers" id="message-container">
+        <label for="message">Message <span>*</span></label><br>
+        <textarea name="message" class="message" cols="25" rows="5"></textarea>
+        <div class="error-message">This field is required.</div>
+      </div>
+      <div id="consent">
+        <div class="checkbox"><img src="./assets/images/icon-checkbox-check.svg " alt="checkmark"></div>
+        <p>I consent to being contacted by the team <span>*</span></p>
+      </div>
+    <button id="submit">Submit</button>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Davibron">David Omonehin</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
